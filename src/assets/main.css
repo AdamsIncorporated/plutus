@@ -16,3 +16,20 @@ main {
   align-items: stretch;
 }
 
+.logo-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc();
+  width: 100%;
+}
+
+.logo-item {
+  width: 100%; /* fill grid cell */
+}
+
+.logo-item img {
+  width: 100%; /* scale with parent */
+  height: auto; /* maintain aspect ratio */
+  display: block; /* remove inline spacing */
+}
+

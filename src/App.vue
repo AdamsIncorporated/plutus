@@ -3,7 +3,7 @@
 
 <template>
   <main>
-    Hello World
+    <Grid/>
   </main>
 </template>
 
