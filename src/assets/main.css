@@ -1,35 +1,64 @@
 body {
   margin: 0;
-  background: linear-gradient(270deg, rgb(186, 108, 0), rgb(150, 60, 0));
+  background: linear-gradient(180deg, rgb(211, 211, 211), rgb(219, 149, 100));
   display: flex;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.6;
   height: 100vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: rgb(75, 44, 22);
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  margin: 5%;
+}
+
+.welcome {
+  margin-bottom: 10%;
 }
 
 .logo-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: calc();
+  gap: 5px;
   width: 100%;
 }
 
 .logo-item {
-  width: 100%; /* fill grid cell */
+  width: 20%; /* fill grid cell */
 }
 
 .logo-item img {
-  width: 100%; /* scale with parent */
-  height: auto; /* maintain aspect ratio */
-  display: block; /* remove inline spacing */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  width: 0;
+  animation: typing 3s steps(20, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
