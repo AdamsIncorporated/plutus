@@ -1,23 +1,27 @@
 <script setup lang="ts">
 interface Descriptions {
-  name: string,
-  description: string
+  name: string;
+  description: string;
 }
 
 const descriptions: Descriptions[] = [
-  {name: "test", descriptions: "test"}
-
-]
+  { name: "test", descriptions: "test" },
+  { name: "test", descriptions: "test" },
+  { name: "test", descriptions: "test" },
+  { name: "test", descriptions: "test" },
+  { name: "test", descriptions: "test" },
+  { name: "test", descriptions: "test" },
+];
 </script>
 
 <template id="Projects">
-  <div class="grid-cols-3 gap-4">
+  <div class="two-col-grid">
     <div
       v-for="description in descriptions"
       :key="description.name"
-      class=""
+      class="item"
     >
-    {{description.name}}
-  </div>
+      {{ description.name }}
+    </div>
   </div>
 </template>

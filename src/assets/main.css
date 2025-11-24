@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: linear-gradient(180deg, rgb(211, 211, 211), rgb(219, 149, 100));
+  background: linear-gradient(180deg, rgb(211, 211, 211), rgb(208, 202, 198));
   display: flex;
   font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-size: 30px;
@@ -61,4 +61,26 @@ main {
   50% {
     border-color: transparent;
   }
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  align-items: stretch;
+}
+
+.two-col-grid .item {
+  width: auto;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  border: .25rem solid #706666;
 }
