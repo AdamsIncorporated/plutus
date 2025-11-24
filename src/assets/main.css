@@ -83,4 +83,10 @@ main {
   text-align: center;
   font-weight: 600;
   border: .25rem solid #706666;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: translateY(-3px)
 }
