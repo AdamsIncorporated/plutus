@@ -5,9 +5,9 @@ interface Descriptions {
 }
 
 const descriptions: Descriptions[] = [
-  { name: "test", descriptions: "test" },
-  { name: "test", descriptions: "test" },
-  { name: "test", descriptions: "test" },
+  { name: "Agora SEC", descriptions: "test" },
+  { name: "Agora FINRA", descriptions: "test" },
+  { name: "Agora Yahoo", descriptions: "test" },
   { name: "test", descriptions: "test" },
   { name: "test", descriptions: "test" },
   { name: "test", descriptions: "test" },
