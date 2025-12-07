@@ -5,12 +5,12 @@ interface Descriptions {
 }
 
 const descriptions: Descriptions[] = [
-  { name: "Agora SEC", descriptions: "test" },
-  { name: "Agora FINRA", descriptions: "test" },
-  { name: "Agora Yahoo", descriptions: "test" },
-  { name: "test", descriptions: "test" },
-  { name: "test", descriptions: "test" },
-  { name: "test", descriptions: "test" },
+  { name: "Agora SEC", description: "test" },
+  { name: "Agora FINRA", description: "test" },
+  { name: "Agora Yahoo", description: "test" },
+  { name: "test", description: "test" },
+  { name: "test", description: "test" },
+  { name: "test", description: "test" },
 ];
 </script>
 
