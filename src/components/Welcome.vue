@@ -2,7 +2,7 @@
   <span>{{ displayed }}</span>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
     text: { type: String, required: true },
