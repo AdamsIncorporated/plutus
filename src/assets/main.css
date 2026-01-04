@@ -44,13 +44,14 @@ main {
 }
 
 .logo-item {
-  width: 20%; /* fill grid cell */
+  width: 20%;
 }
 
 .logo-item img {
   width: 100%;
   height: auto;
   display: block;
+  text-align: left;
 }
 
 
@@ -70,15 +71,23 @@ main {
   background: var(--color-cream);
   padding: 16px;
   border-radius: 6px;
-  text-align: center;
   font-weight: 600;
   border: .25rem solid var(--color-brown);
   transition: transform 0.2s ease;
   cursor: pointer;
 }
 
-.item:hover {
-  transform: translateY(-3px)
+.item-description {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--color-brown);
+  direction: ltr;
+  text-align: left;
+}
+
+.item-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* RESUME */
