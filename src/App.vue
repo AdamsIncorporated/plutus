@@ -3,7 +3,8 @@
 
 <template>
   <main>
-    <Welcome text="Hello world!" :speed="45"></Welcome>
+    <Welcome text="Samuel Adams" :speed="60" style="font-size: 120px;"></Welcome>
+    <Resume/>
     <Project/>
     <Grid/>
   </main>
