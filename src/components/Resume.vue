@@ -1,3 +1,73 @@
+<script setup lang="ts">
+import cLogo from "@/assets/logos/c.png";
+import cppLogo from "@/assets/logos/c++.png";
+import csharpLogo from "@/assets/logos/csharp.png";
+import pythonLogo from "@/assets/logos/python.png";
+import rustLogo from "@/assets/logos/rust.png";
+import snowflakeLogo from "@/assets/logos/snowflake.png";
+import tensorLogo from "@/assets/logos/tensor.png";
+
+interface Logo {
+  name: string;
+  src: string;
+}
+
+const logos: Logo[] = [
+  { name: "C", src: cLogo },
+  { name: "C++", src: cppLogo },
+  { name: "C#", src: csharpLogo },
+  { name: "Python", src: pythonLogo },
+  { name: "Rust", src: rustLogo },
+  { name: "Snowflake", src: snowflakeLogo },
+  { name: "Tensor", src: tensorLogo },
+];
+</script>
+
+<style scoped>
+.ticker-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.ticker {
+  display: flex;
+  align-items: center;
+}
+
+.ticker-content {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem; /* spacing between logos */
+}
+
+.logo-img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+}
+
+.logo-name {
+  margin-top: 0.5rem;
+  font-size: 0.875rem; /* 14px */
+  text-align: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
+
 <template>
   <div class="resume-container">
     <!-- Education -->
@@ -79,17 +149,24 @@
     <section>
       <h2 class="section-title">Technical Skills</h2>
       <div class="skills-grid">
-        <div>
-          <strong>Languages:</strong> HTML/CSS, TypeScript, Python, Scala,
-          Julia, R, SQL, C, C#, C++, Rust
-        </div>
-        <div>
-          <strong>Frameworks:</strong> React, Vue, Flask, Django, Actix, Nginx,
-          Vite
-        </div>
-        <div>
-          <strong>CI/CD:</strong> Jenkins, Docker, AWS EC2/S3, Git, Azure
-          DevOps, Key Vault
+        <div class="ticker-wrapper">
+          <div class="ticker">
+            <!-- Repeat logos twice for seamless loop -->
+            <div class="ticker-content">
+              <div v-for="logo in logos" :key="logo.name" class="logo-item">
+                <img :src="logo.src" :alt="logo.name" class="logo-img" />
+                <p class="logo-name">{{ logo.name }}</p>
+              </div>
+              <div
+                v-for="logo in logos"
+                :key="'dup-' + logo.name"
+                class="logo-item"
+              >
+                <img :src="logo.src" :alt="logo.name" class="logo-img" />
+                <p class="logo-name">{{ logo.name }}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
