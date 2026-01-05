@@ -1,9 +1,7 @@
-@font-face {
-  font-family: "TEST";
-  src: url("/assets/fonts/AgaveNerdFont-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -30,8 +28,9 @@ html, body {
 }
 
 .main {
-  font-family: "TEST", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   font-size: var(--font-base);
+  font-weight: 800;
   line-height: var(--line-height);
   color: var(--color-brown);
   display: flex;
@@ -45,15 +44,22 @@ html, body {
   box-sizing: border-box;
 }
 
-
-
 /* ----------------- WELCOME ----------------- */
-.welcome {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--color-olive);
-  text-align: left;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  direction: ltr;
+  gap: var(--space-md);
   margin-bottom: var(--space-lg);
+}
+
+.profile {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border : 0.5rem solid var(--color-brown);
+  object-fit: cover;
+  vertical-align: middle;
 }
 
 /* ----------------- LOGO ----------------- */
