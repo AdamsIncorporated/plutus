@@ -1,4 +1,4 @@
-<template id="Welcome">
+<template id="Welcome" class="welcome">
   <span>{{ displayed }}</span>
 </template>
 

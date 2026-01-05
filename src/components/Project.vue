@@ -2,7 +2,7 @@
 interface Descriptions {
   name: string;
   description: string;
-  url: string; // add a URL field
+  url: string;
 }
 
 const descriptions: Descriptions[] = [
@@ -22,7 +22,7 @@ const descriptions: Descriptions[] = [
     name: "Agora Yahoo",
     description:
       "An API wrapper to parse and collect data from Yahoo Finance written in Rust.",
-    url: "https://github.com/yourusername/agora-yahoo",
+    url: "https://github.com/AdamsIncorporated/agora_yahoo",
   },
 ];
 </script>

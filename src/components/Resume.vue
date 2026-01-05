@@ -5,7 +5,8 @@
       <h2 class="section-title">Education</h2>
       <ul class="list experience">
         <li>
-          Master of Finance, MSQFE; McCoy School of Business; Texas State University
+          Master of Finance, MSQFE; McCoy School of Business; Texas State
+          University
           <span class="date">8/2022 – 8/2024</span>
         </li>
         <li>
@@ -23,31 +24,53 @@
         <h3 class="job-title">Central Health – Austin, Texas</h3>
         <p class="role">Full-Stack Software Engineer | 9/2024 – present</p>
         <ul class="list">
-          <li>Designed and implemented three comprehensive Snowflake multidimensional databases for financial data visualization...</li>
-          <li>Built multiple Streamlit applications to streamline tax distribution management...</li>
-          <li>Developed Budget-to-Actuals web app using React + Flask, deployed on Azure DevOps...</li>
+          <li>
+            Designed and implemented three comprehensive Snowflake
+            multidimensional databases for financial data visualization...
+          </li>
+          <li>
+            Built multiple Streamlit applications to streamline tax distribution
+            management...
+          </li>
+          <li>
+            Developed Budget-to-Actuals web app using React + Flask, deployed on
+            Azure DevOps...
+          </li>
           <li>Developed Debt Management database + TS React/Rust web app...</li>
         </ul>
       </div>
 
       <div class="experience">
         <h3 class="job-title">Texas Bond Review Board – Austin, Texas</h3>
-        <p class="role">Financial Analyst & Full-Stack Software Engineer | 4/2023 – 9/2024</p>
+        <p class="role">
+          Financial Analyst & Full-Stack Software Engineer | 4/2023 – 9/2024
+        </p>
         <ul class="list">
-          <li>Crafted triggers, tables, and queries for MS SQL Server Database</li>
-          <li>Built Flask & Django web apps for staff to visualize/edit database</li>
+          <li>
+            Crafted triggers, tables, and queries for MS SQL Server Database
+          </li>
+          <li>
+            Built Flask & Django web apps for staff to visualize/edit database
+          </li>
           <li>Created AWS S3 Pipelines, CI/CD Docker environments</li>
           <li>Developed NLP software to extract bond sentiment</li>
         </ul>
       </div>
 
       <div class="experience">
-        <h3 class="job-title">Municipal Advisory Council of Texas – Austin, Texas</h3>
+        <h3 class="job-title">
+          Municipal Advisory Council of Texas – Austin, Texas
+        </h3>
         <p class="role">Financial Analyst | 4/2022 – 11/2022</p>
         <ul class="list">
           <li>Fixed income, derivatives, and property analysis</li>
-          <li>Produced Texas Municipal Reports for public finance municipal market</li>
-          <li>Created C#/Razor MVC Web App for municipal bond property data pipeline</li>
+          <li>
+            Produced Texas Municipal Reports for public finance municipal market
+          </li>
+          <li>
+            Created C#/Razor MVC Web App for municipal bond property data
+            pipeline
+          </li>
         </ul>
       </div>
     </section>
@@ -57,13 +80,16 @@
       <h2 class="section-title">Technical Skills</h2>
       <div class="skills-grid">
         <div>
-          <strong>Languages:</strong> HTML/CSS, TypeScript, Python, Scala, Julia, R, SQL, C, C#, C++, Rust
+          <strong>Languages:</strong> HTML/CSS, TypeScript, Python, Scala,
+          Julia, R, SQL, C, C#, C++, Rust
         </div>
         <div>
-          <strong>Frameworks:</strong> React, Vue, Flask, Django, Actix, Nginx, Vite
+          <strong>Frameworks:</strong> React, Vue, Flask, Django, Actix, Nginx,
+          Vite
         </div>
         <div>
-          <strong>CI/CD:</strong> Jenkins, Docker, AWS EC2/S3, Git, Azure DevOps, Key Vault
+          <strong>CI/CD:</strong> Jenkins, Docker, AWS EC2/S3, Git, Azure
+          DevOps, Key Vault
         </div>
       </div>
     </section>

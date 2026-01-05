@@ -5,11 +5,13 @@ import Grid from "./components/Grid.vue";
 import Welcome from "./components/Welcome.vue";
 import Resume from "./components/Resume.vue";
 import Project from "./components/Project.vue";
+import Footer from "./components/Footer.vue";
 
 const app = createApp(App);
 app
   .component("Grid", Grid)
   .component("Welcome", Welcome)
   .component("Resume", Resume)
-  .component("Project", Project);
+  .component("Project", Project)
+  .component("Footer", Footer);
 app.mount("#app");
