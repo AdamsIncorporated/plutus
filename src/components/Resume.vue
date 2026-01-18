@@ -5,7 +5,12 @@ import csharpLogo from "@/assets/logos/csharp.png";
 import pythonLogo from "@/assets/logos/python.png";
 import rustLogo from "@/assets/logos/rust.png";
 import snowflakeLogo from "@/assets/logos/snowflake.png";
+
+import react from "@/assets/logos/react.png";
+import pandas from "@/assets/logos/pandas.svg";
 import tensorLogo from "@/assets/logos/tensor.png";
+import vue from "@/assets/logos/vue.png";
+import scipy from "@/assets/logos/scipy.png";
 
 interface Logo {
   name: string;
@@ -19,54 +24,21 @@ const logos: Logo[] = [
   { name: "Python", src: pythonLogo },
   { name: "Rust", src: rustLogo },
   { name: "Snowflake", src: snowflakeLogo },
+];
+
+interface LibraryLogo {
+  name: string;
+  src: string;
+}
+
+const librariesLogos: LibraryLogo[] = [
   { name: "Tensor", src: tensorLogo },
+  { name: "Pandas", src: pandas },
+  { name: "React", src: react },
+  { name: "Vue", src: vue },
+  { name: "SciPy", src: scipy },
 ];
 </script>
-
-<style scoped>
-.ticker-wrapper {
-  overflow: hidden;
-  width: 100%;
-}
-
-.ticker {
-  display: flex;
-  align-items: center;
-}
-
-.ticker-content {
-  display: flex;
-  animation: scroll 20s linear infinite;
-}
-
-.logo-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 2rem; /* spacing between logos */
-}
-
-.logo-img {
-  width: 5rem;
-  height: 5rem;
-  object-fit: contain;
-}
-
-.logo-name {
-  margin-top: 0.5rem;
-  font-size: 0.875rem; /* 14px */
-  text-align: center;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-</style>
 
 <template>
   <div class="resume-container">
@@ -96,17 +68,22 @@ const logos: Logo[] = [
         <ul class="list">
           <li>
             Designed and implemented three comprehensive Snowflake
-            multidimensional databases for financial data visualization...
+            multidimensional databases for financial data visualization
           </li>
           <li>
             Built multiple Streamlit applications to streamline tax distribution
-            management...
+            management and chart of account hierarchies
           </li>
           <li>
             Developed Budget-to-Actuals web app using React + Flask, deployed on
-            Azure DevOps...
+            Azure DevOps
           </li>
-          <li>Developed Debt Management database + TS React/Rust web app...</li>
+          <li>Developed Debt Management database + TS React/Rust web app</li>
+          <li>
+            Responsible for monthly operating sources and uses financials
+            packages sourced from Snowflake business logic
+          </li>
+          <li>GASB Expertise</li>
         </ul>
       </div>
 
@@ -148,18 +125,45 @@ const logos: Logo[] = [
     <!-- Technical Skills -->
     <section>
       <h2 class="section-title">Technical Skills</h2>
+
       <div class="skills-grid">
+        <!-- Row 1 -->
         <div class="ticker-wrapper">
           <div class="ticker">
-            <!-- Repeat logos twice for seamless loop -->
             <div class="ticker-content">
               <div v-for="logo in logos" :key="logo.name" class="logo-item">
                 <img :src="logo.src" :alt="logo.name" class="logo-img" />
                 <p class="logo-name">{{ logo.name }}</p>
               </div>
+
               <div
                 v-for="logo in logos"
                 :key="'dup-' + logo.name"
+                class="logo-item"
+              >
+                <img :src="logo.src" :alt="logo.name" class="logo-img" />
+                <p class="logo-name">{{ logo.name }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="ticker-wrapper">
+          <div class="ticker">
+            <div class="ticker-content ticker-content-reversed">
+              <div
+                v-for="logo in librariesLogos"
+                :key="logo.name"
+                class="logo-item"
+              >
+                <img :src="logo.src" :alt="logo.name" class="logo-img" />
+                <p class="logo-name">{{ logo.name }}</p>
+              </div>
+
+              <div
+                v-for="logo in librariesLogos"
+                :key="'dup-lib-' + logo.name"
                 class="logo-item"
               >
                 <img :src="logo.src" :alt="logo.name" class="logo-img" />
