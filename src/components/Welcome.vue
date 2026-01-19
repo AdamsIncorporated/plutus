@@ -3,8 +3,10 @@
     <div class="welcome">
       <span>{{ displayed }}</span>
     </div>
-    <img :src="Profile" alt="Profile" class="profile"/>
   </div>
+  <img :src="Profile" alt="Profile" class="profile"/>
+  <div class="quote">“An investment in knowledge pays the best interest.”
+— Benjamin Franklin</div>
 </template>
 
 <script lang="ts">

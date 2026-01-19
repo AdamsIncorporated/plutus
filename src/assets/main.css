@@ -35,7 +35,6 @@ body {
   color: var(--color-brown);
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-height: 100vh;
   width: 100%;
   max-width: 62.5rem; /* 1000px */
@@ -47,8 +46,10 @@ body {
 /* ----------------- WELCOME ----------------- */
 .header-container {
   display: flex;
+  text-align: center;
   flex-direction: column;
   direction: ltr;
+  font-size: 5rem;
   gap: var(--space-md);
   margin-bottom: var(--space-lg);
 }
@@ -60,6 +61,15 @@ body {
   border: 0.5rem solid var(--color-brown);
   object-fit: cover;
   vertical-align: middle;
+  margin: 1rem auto;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--color-olive);
+  margin-top: var(--space-sm);
+  text-align: center;
 }
 
 /* ----------------- LOGO ----------------- */
@@ -78,7 +88,7 @@ body {
 }
 
 /* ----------------- PROJECTS ----------------- */
-.two-col-grid {
+.three-col-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--space-sm);
@@ -88,7 +98,7 @@ body {
   padding: 0 var(--space-md);
 }
 
-.two-col-grid .item {
+.three-col-grid .item {
   background: var(--color-cream);
   padding: var(--space-md);
   border-radius: 0.5rem;
@@ -228,7 +238,7 @@ body {
     font-size: 0.9375rem; /* 15px */
   }
 
-  .two-col-grid {
+  .three-col-grid {
     grid-template-columns: 1fr; /* stack on mobile */
   }
 

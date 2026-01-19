@@ -28,21 +28,20 @@ const descriptions: Descriptions[] = [
 </script>
 
 <template id="Projects">
-  <div class="two-col-grid">
-    <div
+  <section>
+    <h2 class="section-title">Projects</h2>
+  </section>
+  <div class="three-col-grid">
+    <a
       v-for="description in descriptions"
       :key="description.name"
-      class="item"
+      :href="description.url"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="item item-link"
     >
-      <a
-        :href="description.url"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="item-link"
-      >
-        {{ description.name }}
-      </a>
+      <div class="item-title">{{ description.name }}</div>
       <div class="item-description">{{ description.description }}</div>
-    </div>
+    </a>
   </div>
 </template>
